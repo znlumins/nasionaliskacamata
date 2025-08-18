@@ -33,16 +33,16 @@ const Layout = ({ children }: LayoutProps) => {
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-1">
                 <Phone className="h-3 w-3" />
-                <span>+62 xxx-xxxx-xxxx</span>
+                <span>+62 813-3680-4334</span>
               </div>
               <div className="flex items-center space-x-1">
                 <Clock className="h-3 w-3" />
-                <span>Senin - Minggu: 08:00 - 20:00</span>
+                <span>Senin - Minggu: 08:00 - 19:00</span>
               </div>
             </div>
             <div className="flex items-center space-x-1">
               <MapPin className="h-3 w-3" />
-              <span>Jl. Raya No. 123, Kota Anda</span>
+              <span>Jl.Panglima Sudirman 206A ( Depan Bank Syariah Indonesia ) Turen Malang</span>
             </div>
           </div>
         </div>
@@ -188,15 +188,15 @@ const Layout = ({ children }: LayoutProps) => {
               <div className="space-y-3 text-optik-gray-300">
                 <div className="flex items-start space-x-2">
                   <MapPin className="h-4 w-4 mt-1 flex-shrink-0" />
-                  <span className="text-sm">Jl. Raya No. 123, Kota Anda</span>
+                  <span className="text-sm">Jl.Panglima Sudirman 206A ( Depan Bank Syariah Indonesia ) Turen Malang</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Phone className="h-4 w-4" />
-                  <span className="text-sm">+62 xxx-xxxx-xxxx</span>
+                  <span className="text-sm">+62 813-3680-4334</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Clock className="h-4 w-4" />
-                  <span className="text-sm">Senin - Minggu: 08:00 - 20:00</span>
+                  <span className="text-sm">Senin - Minggu: 08:00 - 19:00</span>
                 </div>
               </div>
             </div>

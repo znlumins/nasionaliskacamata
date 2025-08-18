@@ -153,7 +153,7 @@ const Layout = ({ children }: LayoutProps) => {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F607a5b5f68f247e6a6ca32955e309b70%2Fc6cbd9efab5b40a5836e6f3d087e2910?format=webp&width=800"
                   alt="Nasionalis Optik - Solusi Penglihatan Anda"
-                  className="h-16 sm:h-20 w-auto mb-2"
+                  className="h-14 sm:h-16 w-auto mb-2"
                 />
               </div>
               <p className="text-optik-gray-300 mb-4">

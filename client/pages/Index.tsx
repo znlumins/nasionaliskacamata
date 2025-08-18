@@ -122,16 +122,17 @@ export default function Index() {
 
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white max-w-4xl mx-auto px-4">
-            <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold mb-4 sm:mb-6 font-display leading-tight">
-              Optik Nasionalis Kacamata
-            </h1>
-            <p className="text-lg sm:text-xl lg:text-2xl mb-6 sm:mb-8 font-medium">
-              Solusi Penglihatan Terbaik untuk Anda
-            </p>
-            <p className="text-sm sm:text-base lg:text-lg mb-6 sm:mb-8 opacity-90 max-w-2xl mx-auto leading-relaxed">
-              Optik terpercaya yang telah melayani masyarakat selama bertahun-tahun
-              dengan mengutamakan kualitas dan layanan yang ramah
-            </p>
+            <div className="bg-black/20 backdrop-blur-sm rounded-3xl p-8 sm:p-12 border border-white/10">
+              <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold mb-4 sm:mb-6 font-display leading-tight">
+                Optik Nasionalis Kacamata
+              </h1>
+              <p className="text-lg sm:text-xl lg:text-2xl mb-6 sm:mb-8 font-medium">
+                Solusi Penglihatan Terbaik untuk Anda
+              </p>
+              <p className="text-sm sm:text-base lg:text-lg mb-6 sm:mb-8 opacity-90 max-w-2xl mx-auto leading-relaxed">
+                Optik terpercaya yang telah melayani masyarakat selama bertahun-tahun
+                dengan mengutamakan kualitas dan layanan yang ramah
+              </p>
             <Button
               asChild
               variant="primary"
@@ -143,6 +144,7 @@ export default function Index() {
                 <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
               </Link>
             </Button>
+            </div>
           </div>
         </div>
 
@@ -161,12 +163,12 @@ export default function Index() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-12 sm:py-16 bg-optik-gray-50">
+      <section className="py-12 sm:py-16 bg-gradient-to-br from-optik-gray-50 to-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-optik-red-100 text-optik-red-600 rounded-full mb-3 sm:mb-4">
+              <div key={index} className="text-center group">
+                <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-optik-red-500 to-optik-red-600 text-white rounded-2xl mb-3 sm:mb-4 shadow-lg group-hover:shadow-xl group-hover:scale-110 transition-all duration-300">
                   <stat.icon className="h-6 w-6 sm:h-8 sm:w-8" />
                 </div>
                 <div className="text-2xl sm:text-3xl font-bold text-optik-gray-900 mb-1 sm:mb-2 font-display">
@@ -197,22 +199,22 @@ export default function Index() {
             kami memahami kebutuhan setiap pelanggan dengan sempurna.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 mt-8 sm:mt-12">
-            <div className="text-center px-4">
-              <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-optik-red-100 text-optik-red-600 rounded-full mb-3 sm:mb-4">
+            <div className="text-center px-4 group">
+              <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-optik-red-500 to-optik-red-600 text-white rounded-2xl mb-3 sm:mb-4 shadow-lg group-hover:shadow-xl group-hover:scale-110 transition-all duration-300">
                 <Shield className="h-6 w-6 sm:h-8 sm:w-8" />
               </div>
               <h3 className="text-lg sm:text-xl font-semibold text-optik-gray-900 mb-2">Kualitas Terjamin</h3>
               <p className="text-sm sm:text-base text-optik-gray-600">Produk berkualitas tinggi dengan garansi resmi</p>
             </div>
-            <div className="text-center px-4">
-              <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-optik-red-100 text-optik-red-600 rounded-full mb-3 sm:mb-4">
+            <div className="text-center px-4 group">
+              <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-optik-red-500 to-optik-red-600 text-white rounded-2xl mb-3 sm:mb-4 shadow-lg group-hover:shadow-xl group-hover:scale-110 transition-all duration-300">
                 <Users className="h-6 w-6 sm:h-8 sm:w-8" />
               </div>
               <h3 className="text-lg sm:text-xl font-semibold text-optik-gray-900 mb-2">Tim Profesional</h3>
               <p className="text-sm sm:text-base text-optik-gray-600">Ahli optik berpengalaman dan bersertifikat</p>
             </div>
-            <div className="text-center px-4">
-              <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-optik-red-100 text-optik-red-600 rounded-full mb-3 sm:mb-4">
+            <div className="text-center px-4 group">
+              <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-optik-red-500 to-optik-red-600 text-white rounded-2xl mb-3 sm:mb-4 shadow-lg group-hover:shadow-xl group-hover:scale-110 transition-all duration-300">
                 <Heart className="h-6 w-6 sm:h-8 sm:w-8" />
               </div>
               <h3 className="text-lg sm:text-xl font-semibold text-optik-gray-900 mb-2">Layanan Ramah</h3>
@@ -223,7 +225,7 @@ export default function Index() {
       </section>
 
       {/* Services Section */}
-      <section className="py-12 sm:py-16 bg-optik-gray-50">
+      <section className="py-12 sm:py-16 bg-gradient-to-br from-optik-gray-50 to-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8 sm:mb-12">
             <Badge variant="primary" size="md" className="mb-4">
@@ -242,7 +244,7 @@ export default function Index() {
             {services.map((service, index) => (
               <Card key={index} variant="elevated" className="group">
                 <CardContent className="p-6 sm:p-8">
-                  <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-optik-red-100 text-optik-red-600 rounded-full mb-4 sm:mb-6 group-hover:bg-optik-red-600 group-hover:text-white transition-colors">
+                  <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-optik-red-500 to-optik-red-600 text-white rounded-2xl mb-4 sm:mb-6 shadow-lg group-hover:shadow-xl group-hover:scale-110 transition-all duration-300">
                     <service.icon className="h-6 w-6 sm:h-8 sm:w-8" />
                   </div>
                   <h3 className="text-lg sm:text-xl font-semibold text-optik-gray-900 mb-3 sm:mb-4">
@@ -317,7 +319,10 @@ export default function Index() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 sm:py-16 bg-optik-red-600 text-white">
+      <section className="py-12 sm:py-16 bg-gradient-to-br from-optik-red-600 to-optik-red-700 text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-black/10" />
+        <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -translate-y-32 translate-x-32" />
+        <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full translate-y-32 -translate-x-32" />
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 font-display">
             Siap Menemukan Kacamata Ideal Anda?

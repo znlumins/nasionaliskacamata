@@ -103,7 +103,7 @@ export default function Index() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative h-[600px] md:h-[700px] overflow-hidden">
+      <section className="relative h-[500px] sm:h-[600px] lg:h-[700px] overflow-hidden">
         {heroSlides.map((slide, index) => (
           <div
             key={slide.id}
@@ -119,27 +119,27 @@ export default function Index() {
             <div className="absolute inset-0 bg-black bg-opacity-40" />
           </div>
         ))}
-        
+
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white max-w-4xl mx-auto px-4">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 font-display">
+            <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold mb-4 sm:mb-6 font-display leading-tight">
               Optik Nasionalis Kacamata
             </h1>
-            <p className="text-xl md:text-2xl mb-8 font-medium">
+            <p className="text-lg sm:text-xl lg:text-2xl mb-6 sm:mb-8 font-medium">
               Solusi Penglihatan Terbaik untuk Anda
             </p>
-            <p className="text-lg mb-8 opacity-90 max-w-2xl mx-auto">
-              Optik terpercaya yang telah melayani masyarakat selama bertahun-tahun 
+            <p className="text-sm sm:text-base lg:text-lg mb-6 sm:mb-8 opacity-90 max-w-2xl mx-auto leading-relaxed">
+              Optik terpercaya yang telah melayani masyarakat selama bertahun-tahun
               dengan mengutamakan kualitas dan layanan yang ramah
             </p>
-            <Button 
+            <Button
               asChild
               size="lg"
-              className="bg-optik-red-600 hover:bg-optik-red-700 text-white font-semibold px-8 py-4 text-lg"
+              className="bg-optik-red-600 hover:bg-optik-red-700 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg hover:shadow-xl transition-all"
             >
               <Link to="/produk" className="inline-flex items-center space-x-2">
                 <span>Lihat Koleksi Kami</span>
-                <ArrowRight className="h-5 w-5" />
+                <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
               </Link>
             </Button>
           </div>
@@ -160,18 +160,18 @@ export default function Index() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-optik-gray-50">
+      <section className="py-12 sm:py-16 bg-optik-gray-50">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-optik-red-100 text-optik-red-600 rounded-full mb-4">
-                  <stat.icon className="h-8 w-8" />
+                <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-optik-red-100 text-optik-red-600 rounded-full mb-3 sm:mb-4">
+                  <stat.icon className="h-6 w-6 sm:h-8 sm:w-8" />
                 </div>
-                <div className="text-3xl font-bold text-optik-gray-900 mb-2 font-display">
+                <div className="text-2xl sm:text-3xl font-bold text-optik-gray-900 mb-1 sm:mb-2 font-display">
                   {stat.number}
                 </div>
-                <div className="text-optik-gray-600 text-sm font-medium">
+                <div className="text-optik-gray-600 text-xs sm:text-sm font-medium">
                   {stat.label}
                 </div>
               </div>
@@ -325,22 +325,22 @@ export default function Index() {
             Kunjungi toko kami sekarang untuk pemeriksaan mata gratis dan 
             konsultasi pemilihan frame yang tepat untuk Anda.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button
               asChild
               size="lg"
-              className="bg-white text-optik-red-600 hover:bg-optik-gray-100 font-semibold px-8 py-4"
+              className="bg-white text-optik-red-600 hover:bg-optik-gray-100 font-semibold px-6 sm:px-8 py-3 sm:py-4 shadow-lg hover:shadow-xl transition-all w-full sm:w-auto"
             >
-              <Link to="/produk" className="inline-flex items-center space-x-2">
+              <Link to="/produk" className="inline-flex items-center justify-center space-x-2">
                 <span>Lihat Produk</span>
-                <ArrowRight className="h-5 w-5" />
+                <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
               </Link>
             </Button>
-            <Button 
+            <Button
               asChild
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-optik-red-600 font-semibold px-8 py-4"
+              className="border-white text-white hover:bg-white hover:text-optik-red-600 font-semibold px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto transition-all"
             >
               <Link to="/kontak">Hubungi Kami</Link>
             </Button>

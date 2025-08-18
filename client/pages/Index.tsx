@@ -181,79 +181,79 @@ export default function Index() {
       </section>
 
       {/* Introduction Section */}
-      <section className="py-16">
+      <section className="py-12 sm:py-16">
         <div className="container mx-auto px-4 text-center max-w-4xl">
-          <Badge className="bg-optik-red-100 text-optik-red-700 mb-6">
+          <Badge className="bg-optik-red-100 text-optik-red-700 mb-4 sm:mb-6">
             Tentang Kami
           </Badge>
-          <h2 className="text-3xl md:text-4xl font-bold text-optik-gray-900 mb-6">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-optik-gray-900 mb-4 sm:mb-6">
             Mengapa Memilih Optik Nasionalis?
           </h2>
-          <p className="text-lg text-optik-gray-600 mb-8 leading-relaxed">
-            Sebagai optik terpercaya yang telah berdiri selama puluhan tahun, kami berkomitmen 
-            untuk memberikan solusi penglihatan terbaik dengan mengutamakan kualitas produk, 
-            layanan profesional, dan kepuasan pelanggan. Pengalaman bertahun-tahun membuat 
+          <p className="text-base sm:text-lg text-optik-gray-600 mb-6 sm:mb-8 leading-relaxed">
+            Sebagai optik terpercaya yang telah berdiri selama puluhan tahun, kami berkomitmen
+            untuk memberikan solusi penglihatan terbaik dengan mengutamakan kualitas produk,
+            layanan profesional, dan kepuasan pelanggan. Pengalaman bertahun-tahun membuat
             kami memahami kebutuhan setiap pelanggan dengan sempurna.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-            <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-optik-red-100 text-optik-red-600 rounded-full mb-4">
-                <Shield className="h-8 w-8" />
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 mt-8 sm:mt-12">
+            <div className="text-center px-4">
+              <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-optik-red-100 text-optik-red-600 rounded-full mb-3 sm:mb-4">
+                <Shield className="h-6 w-6 sm:h-8 sm:w-8" />
               </div>
-              <h3 className="text-xl font-semibold text-optik-gray-900 mb-2">Kualitas Terjamin</h3>
-              <p className="text-optik-gray-600">Produk berkualitas tinggi dengan garansi resmi</p>
+              <h3 className="text-lg sm:text-xl font-semibold text-optik-gray-900 mb-2">Kualitas Terjamin</h3>
+              <p className="text-sm sm:text-base text-optik-gray-600">Produk berkualitas tinggi dengan garansi resmi</p>
             </div>
-            <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-optik-red-100 text-optik-red-600 rounded-full mb-4">
-                <Users className="h-8 w-8" />
+            <div className="text-center px-4">
+              <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-optik-red-100 text-optik-red-600 rounded-full mb-3 sm:mb-4">
+                <Users className="h-6 w-6 sm:h-8 sm:w-8" />
               </div>
-              <h3 className="text-xl font-semibold text-optik-gray-900 mb-2">Tim Profesional</h3>
-              <p className="text-optik-gray-600">Ahli optik berpengalaman dan bersertifikat</p>
+              <h3 className="text-lg sm:text-xl font-semibold text-optik-gray-900 mb-2">Tim Profesional</h3>
+              <p className="text-sm sm:text-base text-optik-gray-600">Ahli optik berpengalaman dan bersertifikat</p>
             </div>
-            <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-optik-red-100 text-optik-red-600 rounded-full mb-4">
-                <Heart className="h-8 w-8" />
+            <div className="text-center px-4">
+              <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-optik-red-100 text-optik-red-600 rounded-full mb-3 sm:mb-4">
+                <Heart className="h-6 w-6 sm:h-8 sm:w-8" />
               </div>
-              <h3 className="text-xl font-semibold text-optik-gray-900 mb-2">Layanan Ramah</h3>
-              <p className="text-optik-gray-600">Pelayanan yang personal dan penuh perhatian</p>
+              <h3 className="text-lg sm:text-xl font-semibold text-optik-gray-900 mb-2">Layanan Ramah</h3>
+              <p className="text-sm sm:text-base text-optik-gray-600">Pelayanan yang personal dan penuh perhatian</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Services Section */}
-      <section className="py-16 bg-optik-gray-50">
+      <section className="py-12 sm:py-16 bg-optik-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8 sm:mb-12">
             <Badge className="bg-optik-red-100 text-optik-red-700 mb-4">
               Layanan Unggulan
             </Badge>
-            <h2 className="text-3xl md:text-4xl font-bold text-optik-gray-900 mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-optik-gray-900 mb-4">
               Layanan Terbaik untuk Penglihatan Anda
             </h2>
-            <p className="text-lg text-optik-gray-600 max-w-2xl mx-auto">
-              Kami menyediakan berbagai layanan komprehensif untuk memenuhi 
+            <p className="text-base sm:text-lg text-optik-gray-600 max-w-2xl mx-auto">
+              Kami menyediakan berbagai layanan komprehensif untuk memenuhi
               semua kebutuhan penglihatan Anda dengan standar kualitas tertinggi.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
             {services.map((service, index) => (
               <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow group">
-                <CardContent className="p-8">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-optik-red-100 text-optik-red-600 rounded-full mb-6 group-hover:bg-optik-red-600 group-hover:text-white transition-colors">
-                    <service.icon className="h-8 w-8" />
+                <CardContent className="p-6 sm:p-8">
+                  <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-optik-red-100 text-optik-red-600 rounded-full mb-4 sm:mb-6 group-hover:bg-optik-red-600 group-hover:text-white transition-colors">
+                    <service.icon className="h-6 w-6 sm:h-8 sm:w-8" />
                   </div>
-                  <h3 className="text-xl font-semibold text-optik-gray-900 mb-4">
+                  <h3 className="text-lg sm:text-xl font-semibold text-optik-gray-900 mb-3 sm:mb-4">
                     {service.title}
                   </h3>
-                  <p className="text-optik-gray-600 mb-6 leading-relaxed">
+                  <p className="text-sm sm:text-base text-optik-gray-600 mb-4 sm:mb-6 leading-relaxed">
                     {service.description}
                   </p>
                   <ul className="space-y-2">
                     {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center space-x-2 text-sm text-optik-gray-600">
-                        <CheckCircle className="h-4 w-4 text-optik-red-600 flex-shrink-0" />
+                      <li key={featureIndex} className="flex items-center space-x-2 text-xs sm:text-sm text-optik-gray-600">
+                        <CheckCircle className="h-3 w-3 sm:h-4 sm:w-4 text-optik-red-600 flex-shrink-0" />
                         <span>{feature}</span>
                       </li>
                     ))}
@@ -266,44 +266,44 @@ export default function Index() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-16">
+      <section className="py-12 sm:py-16">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8 sm:mb-12">
             <Badge className="bg-optik-red-100 text-optik-red-700 mb-4">
               Testimoni Pelanggan
             </Badge>
-            <h2 className="text-3xl md:text-4xl font-bold text-optik-gray-900 mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-optik-gray-900 mb-4">
               Apa Kata Pelanggan Kami?
             </h2>
-            <p className="text-lg text-optik-gray-600 max-w-2xl mx-auto">
-              Kepuasan pelanggan adalah prioritas utama kami. Berikut adalah 
+            <p className="text-base sm:text-lg text-optik-gray-600 max-w-2xl mx-auto">
+              Kepuasan pelanggan adalah prioritas utama kami. Berikut adalah
               testimoni dari beberapa pelanggan setia Optik Nasionalis.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
             {testimonials.map((testimonial, index) => (
               <Card key={index} className="border-0 shadow-lg">
-                <CardContent className="p-8">
-                  <div className="flex items-center mb-4">
+                <CardContent className="p-6 sm:p-8">
+                  <div className="flex items-center mb-3 sm:mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
+                      <Star key={i} className="h-4 w-4 sm:h-5 sm:w-5 text-yellow-400 fill-current" />
                     ))}
                   </div>
-                  <p className="text-optik-gray-600 mb-6 leading-relaxed italic">
+                  <p className="text-sm sm:text-base text-optik-gray-600 mb-4 sm:mb-6 leading-relaxed italic">
                     "{testimonial.content}"
                   </p>
-                  <div className="flex items-center space-x-4">
+                  <div className="flex items-center space-x-3 sm:space-x-4">
                     <img
                       src={testimonial.image}
                       alt={testimonial.name}
-                      className="w-12 h-12 rounded-full object-cover"
+                      className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover"
                     />
                     <div>
-                      <h4 className="font-semibold text-optik-gray-900">
+                      <h4 className="text-sm sm:text-base font-semibold text-optik-gray-900">
                         {testimonial.name}
                       </h4>
-                      <p className="text-sm text-optik-gray-600">
+                      <p className="text-xs sm:text-sm text-optik-gray-600">
                         {testimonial.role}
                       </p>
                     </div>
@@ -316,13 +316,13 @@ export default function Index() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-optik-red-600 text-white">
+      <section className="py-12 sm:py-16 bg-optik-red-600 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 font-display">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 font-display">
             Siap Menemukan Kacamata Ideal Anda?
           </h2>
-          <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            Kunjungi toko kami sekarang untuk pemeriksaan mata gratis dan 
+          <p className="text-base sm:text-lg lg:text-xl mb-6 sm:mb-8 opacity-90 max-w-2xl mx-auto">
+            Kunjungi toko kami sekarang untuk pemeriksaan mata gratis dan
             konsultasi pemilihan frame yang tepat untuk Anda.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

@@ -29,20 +29,20 @@ const Layout = ({ children }: LayoutProps) => {
       {/* Top Info Bar */}
       <div className="bg-optik-red-700 text-white text-sm py-2">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-1 md:space-y-0">
-            <div className="flex items-center space-x-4">
+          <div className="flex flex-col lg:flex-row justify-between items-center space-y-2 lg:space-y-0 text-center lg:text-left">
+            <div className="flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-4">
               <div className="flex items-center space-x-1">
                 <Phone className="h-3 w-3" />
-                <span>+62 813-3680-4334</span>
+                <span className="text-xs sm:text-sm">+62 813-3680-4334</span>
               </div>
               <div className="flex items-center space-x-1">
                 <Clock className="h-3 w-3" />
-                <span>Senin - Minggu: 08:00 - 19:00</span>
+                <span className="text-xs sm:text-sm">Senin - Minggu: 08:00 - 19:00</span>
               </div>
             </div>
             <div className="flex items-center space-x-1">
-              <MapPin className="h-3 w-3" />
-              <span>Jl.Panglima Sudirman 206A ( Depan Bank Syariah Indonesia ) Turen Malang</span>
+              <MapPin className="h-3 w-3 flex-shrink-0" />
+              <span className="text-xs sm:text-sm text-center lg:text-right">Jl.Panglima Sudirman 206A ( Depan Bank Syariah Indonesia ) Turen Malang</span>
             </div>
           </div>
         </div>
@@ -62,15 +62,15 @@ const Layout = ({ children }: LayoutProps) => {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center space-x-8">
+            <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
               {navigationItems.map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
                   className={cn(
-                    "text-sm font-medium transition-colors hover:text-optik-red-600",
+                    "text-sm font-medium transition-colors hover:text-optik-red-600 py-2",
                     isActive(item.href)
-                      ? "text-optik-red-600 border-b-2 border-optik-red-600 pb-1"
+                      ? "text-optik-red-600 border-b-2 border-optik-red-600"
                       : "text-optik-gray-700"
                   )}
                 >
@@ -80,9 +80,10 @@ const Layout = ({ children }: LayoutProps) => {
             </nav>
 
             {/* CTA Button */}
-            <div className="hidden md:block">
-              <Button 
+            <div className="hidden lg:block">
+              <Button
                 asChild
+                size="sm"
                 className="bg-optik-red-600 hover:bg-optik-red-700 text-white font-medium"
               >
                 <Link to="/kontak">Hubungi Kami</Link>
@@ -91,8 +92,9 @@ const Layout = ({ children }: LayoutProps) => {
 
             {/* Mobile Menu Button */}
             <button
-              className="md:hidden p-2"
+              className="lg:hidden p-2 rounded-md hover:bg-optik-gray-100 transition-colors"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label="Toggle menu"
             >
               {mobileMenuOpen ? (
                 <X className="h-6 w-6 text-optik-gray-700" />
@@ -105,31 +107,33 @@ const Layout = ({ children }: LayoutProps) => {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <div className="md:hidden bg-white border-t">
-            <nav className="container mx-auto px-4 py-4 space-y-4">
+          <div className="lg:hidden bg-white border-t shadow-lg">
+            <nav className="container mx-auto px-4 py-4 space-y-3">
               {navigationItems.map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
                   className={cn(
-                    "block text-sm font-medium transition-colors",
+                    "block py-2 px-3 text-sm font-medium transition-colors rounded-md",
                     isActive(item.href)
-                      ? "text-optik-red-600"
-                      : "text-optik-gray-700 hover:text-optik-red-600"
+                      ? "text-optik-red-600 bg-optik-red-50"
+                      : "text-optik-gray-700 hover:text-optik-red-600 hover:bg-optik-gray-50"
                   )}
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}
                 </Link>
               ))}
-              <Button 
-                asChild
-                className="w-full bg-optik-red-600 hover:bg-optik-red-700 text-white font-medium"
-              >
-                <Link to="/kontak" onClick={() => setMobileMenuOpen(false)}>
-                  Hubungi Kami
-                </Link>
-              </Button>
+              <div className="pt-2 border-t border-optik-gray-200">
+                <Button
+                  asChild
+                  className="w-full bg-optik-red-600 hover:bg-optik-red-700 text-white font-medium"
+                >
+                  <Link to="/kontak" onClick={() => setMobileMenuOpen(false)}>
+                    Hubungi Kami
+                  </Link>
+                </Button>
+              </div>
             </nav>
           </div>
         )}

@@ -49,7 +49,7 @@ const Layout = ({ children }: LayoutProps) => {
       </div>
 
       {/* Main Header */}
-      <header className="bg-white shadow-lg sticky top-0 z-50">
+      <header className="bg-white/95 backdrop-blur-md border-b border-optik-gray-100 sticky top-0 z-50 shadow-sm">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center py-2">
             {/* Logo */}
@@ -68,13 +68,16 @@ const Layout = ({ children }: LayoutProps) => {
                   key={item.name}
                   to={item.href}
                   className={cn(
-                    "text-sm font-medium transition-colors hover:text-optik-red-600 py-2",
+                    "relative text-sm font-medium transition-all duration-300 py-2 px-3 rounded-lg hover:bg-optik-red-50",
                     isActive(item.href)
-                      ? "text-optik-red-600 border-b-2 border-optik-red-600"
-                      : "text-optik-gray-700"
+                      ? "text-optik-red-600 bg-optik-red-50 shadow-sm"
+                      : "text-optik-gray-700 hover:text-optik-red-600"
                   )}
                 >
                   {item.name}
+                  {isActive(item.href) && (
+                    <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-optik-red-600 rounded-full" />
+                  )}
                 </Link>
               ))}
             </nav>
@@ -107,24 +110,24 @@ const Layout = ({ children }: LayoutProps) => {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <div className="lg:hidden bg-white border-t shadow-lg">
-            <nav className="container mx-auto px-4 py-4 space-y-3">
+          <div className="lg:hidden bg-white/95 backdrop-blur-md border-t border-optik-gray-100 shadow-xl">
+            <nav className="container mx-auto px-4 py-6 space-y-2">
               {navigationItems.map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
                   className={cn(
-                    "block py-2 px-3 text-sm font-medium transition-colors rounded-md",
+                    "block py-3 px-4 text-sm font-medium transition-all duration-300 rounded-xl",
                     isActive(item.href)
-                      ? "text-optik-red-600 bg-optik-red-50"
-                      : "text-optik-gray-700 hover:text-optik-red-600 hover:bg-optik-gray-50"
+                      ? "text-optik-red-600 bg-optik-red-50 shadow-sm border border-optik-red-100"
+                      : "text-optik-gray-700 hover:text-optik-red-600 hover:bg-optik-red-50 hover:shadow-sm"
                   )}
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}
                 </Link>
               ))}
-              <div className="pt-2 border-t border-optik-gray-200">
+              <div className="pt-4 mt-4 border-t border-optik-gray-200">
                 <Button
                   asChild
                   variant="primary"
@@ -144,7 +147,7 @@ const Layout = ({ children }: LayoutProps) => {
       <main>{children}</main>
 
       {/* Footer */}
-      <footer className="bg-optik-gray-900 text-white">
+      <footer className="bg-gradient-to-br from-optik-gray-900 to-optik-gray-800 text-white">
         <div className="container mx-auto px-4 py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* Company Info */}

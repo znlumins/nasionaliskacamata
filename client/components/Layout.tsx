@@ -29,20 +29,20 @@ const Layout = ({ children }: LayoutProps) => {
       {/* Top Info Bar */}
       <div className="bg-optik-red-700 text-white text-sm py-2">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row justify-between items-center space-y-2 lg:space-y-0 text-center lg:text-left">
-            <div className="flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-4">
-              <div className="flex items-center space-x-1">
-                <Phone className="h-3 w-3" />
-                <span className="text-xs sm:text-sm">+62 813-3680-4334</span>
+          <div className="flex flex-row justify-between items-center gap-2 text-xs lg:text-sm">
+            <div className="flex items-center gap-2 lg:gap-4 flex-shrink-0">
+              <div className="flex items-center gap-1">
+                <Phone className="h-2.5 w-2.5 lg:h-3 lg:w-3 flex-shrink-0" />
+                <span className="whitespace-nowrap">+62 813-3680-4334</span>
               </div>
-              <div className="flex items-center space-x-1">
-                <Clock className="h-3 w-3" />
-                <span className="text-xs sm:text-sm">Senin - Minggu: 08:00 - 19:00</span>
+              <div className="hidden sm:flex items-center gap-1">
+                <Clock className="h-2.5 w-2.5 lg:h-3 lg:w-3 flex-shrink-0" />
+                <span className="whitespace-nowrap">Senin - Minggu: 08:00 - 19:00</span>
               </div>
             </div>
-            <div className="flex items-center space-x-1">
-              <MapPin className="h-3 w-3 flex-shrink-0" />
-              <span className="text-xs sm:text-sm text-center lg:text-right">Jl.Panglima Sudirman 206A ( Depan Bank Syariah Indonesia ) Turen Malang</span>
+            <div className="flex items-center gap-1 min-w-0 flex-1 justify-end">
+              <MapPin className="h-2.5 w-2.5 lg:h-3 lg:w-3 flex-shrink-0" />
+              <span className="truncate text-right">Jl.Panglima Sudirman 206A ( Depan Bank Syariah Indonesia ) Turen Malang</span>
             </div>
           </div>
         </div>

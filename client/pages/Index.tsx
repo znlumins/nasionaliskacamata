@@ -22,21 +22,21 @@ export default function Index() {
   const heroSlides = [
     {
       id: 1,
-      image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      title: "Interior Toko yang Nyaman",
-      subtitle: "Suasana yang ramah dan profesional"
+      image: "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      title: "Koleksi Frame Terlengkap",
+      subtitle: "Ribuan pilihan frame berkualitas"
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1508296695146-257a814070b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80",
+      image: "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80",
       title: "Kacamata Elegan & Berkualitas",
-      subtitle: "Koleksi frame terlengkap dan terdepan"
+      subtitle: "Style modern untuk penampilan sempurna"
     },
     {
       id: 3,
-      image: "https://images.unsplash.com/photo-1559181567-c3190ca9959b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2064&q=80",
-      title: "Pelanggan Puas & Bahagia",
-      subtitle: "Testimoni kepuasan dari ribuan pelanggan"
+      image: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2064&q=80",
+      title: "Model Kacamata Terkini",
+      subtitle: "Mengikuti tren fashion terdepan"
     }
   ];
 

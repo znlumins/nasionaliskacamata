@@ -62,7 +62,7 @@ const Layout = ({ children }: LayoutProps) => {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
+            <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8 h-16 sm:h-20">
               {navigationItems.map((item) => (
                 <Link
                   key={item.name}

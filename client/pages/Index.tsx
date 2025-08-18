@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import { Button } from "@/components/meraki";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/meraki";
 import { Badge } from "@/components/ui/badge";
 import { 
   Eye, 
@@ -240,7 +240,7 @@ export default function Index() {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
             {services.map((service, index) => (
-              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow group">
+              <Card key={index} variant="elevated" className="group">
                 <CardContent className="p-6 sm:p-8">
                   <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-optik-red-100 text-optik-red-600 rounded-full mb-4 sm:mb-6 group-hover:bg-optik-red-600 group-hover:text-white transition-colors">
                     <service.icon className="h-6 w-6 sm:h-8 sm:w-8" />
@@ -284,7 +284,7 @@ export default function Index() {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="border-0 shadow-lg">
+              <Card key={index} variant="elevated">
                 <CardContent className="p-6 sm:p-8">
                   <div className="flex items-center mb-3 sm:mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (

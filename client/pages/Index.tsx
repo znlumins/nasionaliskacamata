@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/meraki";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { 
@@ -134,8 +134,9 @@ export default function Index() {
             </p>
             <Button
               asChild
+              variant="primary"
               size="lg"
-              className="bg-optik-red-600 hover:bg-optik-red-700 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg hover:shadow-xl transition-all"
+              className="px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg"
             >
               <Link to="/produk" className="inline-flex items-center space-x-2">
                 <span>Lihat Koleksi Kami</span>
@@ -328,8 +329,9 @@ export default function Index() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
               asChild
+              variant="secondary"
               size="lg"
-              className="bg-white text-optik-red-600 hover:bg-optik-gray-100 font-semibold px-6 sm:px-8 py-3 sm:py-4 shadow-lg hover:shadow-xl transition-all w-full sm:w-auto"
+              className="bg-white text-optik-red-600 hover:bg-optik-gray-100 font-semibold px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
             >
               <Link to="/produk" className="inline-flex items-center justify-center space-x-2">
                 <span>Lihat Produk</span>
@@ -338,9 +340,9 @@ export default function Index() {
             </Button>
             <Button
               asChild
-              size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-optik-red-600 font-semibold px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto transition-all"
+              size="lg"
+              className="border-white text-white hover:bg-white hover:text-optik-red-600 font-semibold px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
             >
               <Link to="/kontak">Hubungi Kami</Link>
             </Button>

@@ -138,33 +138,31 @@ export default function Index() {
 
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white max-w-4xl mx-auto px-4">
-            <div className="bg-black/20 backdrop-blur-sm rounded-3xl p-8 sm:p-12 border border-white/10">
-              <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold mb-4 sm:mb-6 font-display leading-tight">
-                Optik Nasionalis Kacamata
-              </h1>
-              <p className="text-lg sm:text-xl lg:text-2xl mb-6 sm:mb-8 font-medium">
-                Solusi Penglihatan Terbaik untuk Anda
-              </p>
-              <p className="text-sm sm:text-base lg:text-lg mb-6 sm:mb-8 opacity-90 max-w-2xl mx-auto leading-relaxed">
-                Optik terpercaya yang telah melayani masyarakat selama
-                bertahun-tahun dengan mengutamakan kualitas dan layanan yang
-                ramah
-              </p>
-              <Button
-                asChild
-                variant="primary"
-                size="lg"
-                className="px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg"
+            <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold mb-4 sm:mb-6 font-display leading-tight">
+              Optik Nasionalis Kacamata
+            </h1>
+            <p className="text-lg sm:text-xl lg:text-2xl mb-6 sm:mb-8 font-medium">
+              Solusi Penglihatan Terbaik untuk Anda
+            </p>
+            <p className="text-sm sm:text-base lg:text-lg mb-6 sm:mb-8 opacity-90 max-w-2xl mx-auto leading-relaxed">
+              Optik terpercaya yang telah melayani masyarakat selama
+              bertahun-tahun dengan mengutamakan kualitas dan layanan yang
+              ramah
+            </p>
+            <Button
+              asChild
+              variant="primary"
+              size="lg"
+              className="px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg"
+            >
+              <Link
+                to="/produk"
+                className="inline-flex items-center space-x-2"
               >
-                <Link
-                  to="/produk"
-                  className="inline-flex items-center space-x-2"
-                >
-                  <span>Lihat Koleksi Kami</span>
-                  <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
-                </Link>
-              </Button>
-            </div>
+                <span>Lihat Koleksi Kami</span>
+                <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
+              </Link>
+            </Button>
           </div>
         </div>
 

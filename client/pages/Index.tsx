@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import { Button } from "@/components/meraki";
 import { Card, CardContent } from "@/components/meraki";
-import { Badge } from "@/components/ui/badge";
+import { Badge } from "@/components/meraki";
 import { 
   Eye, 
   Users, 
@@ -184,7 +184,7 @@ export default function Index() {
       {/* Introduction Section */}
       <section className="py-12 sm:py-16">
         <div className="container mx-auto px-4 text-center max-w-4xl">
-          <Badge className="bg-optik-red-100 text-optik-red-700 mb-4 sm:mb-6">
+          <Badge variant="primary" size="md" className="mb-4 sm:mb-6">
             Tentang Kami
           </Badge>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-optik-gray-900 mb-4 sm:mb-6">
@@ -226,7 +226,7 @@ export default function Index() {
       <section className="py-12 sm:py-16 bg-optik-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8 sm:mb-12">
-            <Badge className="bg-optik-red-100 text-optik-red-700 mb-4">
+            <Badge variant="primary" size="md" className="mb-4">
               Layanan Unggulan
             </Badge>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-optik-gray-900 mb-4">
@@ -270,7 +270,7 @@ export default function Index() {
       <section className="py-12 sm:py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8 sm:mb-12">
-            <Badge className="bg-optik-red-100 text-optik-red-700 mb-4">
+            <Badge variant="primary" size="md" className="mb-4">
               Testimoni Pelanggan
             </Badge>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-optik-gray-900 mb-4">

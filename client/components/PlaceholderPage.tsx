@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/meraki";
+import { Card, CardContent } from "@/components/meraki";
 import { Construction, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -15,7 +15,7 @@ const PlaceholderPage = ({ title, description, features }: PlaceholderPageProps)
     <Layout>
       <div className="min-h-[60vh] flex items-center justify-center py-16">
         <div className="container mx-auto px-4">
-          <Card className="max-w-2xl mx-auto border-0 shadow-lg">
+          <Card variant="elevated" className="max-w-2xl mx-auto">
             <CardContent className="p-12 text-center">
               <div className="inline-flex items-center justify-center w-20 h-20 bg-optik-red-100 text-optik-red-600 rounded-full mb-6">
                 <Construction className="h-10 w-10" />
@@ -52,14 +52,14 @@ const PlaceholderPage = ({ title, description, features }: PlaceholderPageProps)
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button asChild className="bg-optik-red-600 hover:bg-optik-red-700">
+                  <Button asChild variant="primary">
                     <Link to="/" className="inline-flex items-center space-x-2">
                       <ArrowLeft className="h-4 w-4" />
                       <span>Kembali ke Beranda</span>
                     </Link>
                   </Button>
-                  
-                  <Button asChild variant="outline" className="border-optik-red-600 text-optik-red-600 hover:bg-optik-red-50">
+
+                  <Button asChild variant="outline">
                     <Link to="/kontak">Hubungi Kami</Link>
                   </Button>
                 </div>

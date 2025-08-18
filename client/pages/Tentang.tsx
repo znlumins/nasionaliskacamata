@@ -11,7 +11,7 @@ export default function Tentang() {
         "Visi & misi perusahaan",
         "Profil tim dan ahli optik",
         "Pencapaian dan sertifikasi",
-        "Komitmen terhadap kualitas"
+        "Komitmen terhadap kualitas",
       ]}
     />
   );

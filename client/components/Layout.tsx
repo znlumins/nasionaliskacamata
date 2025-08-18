@@ -37,12 +37,17 @@ const Layout = ({ children }: LayoutProps) => {
               </div>
               <div className="hidden sm:flex items-center gap-1">
                 <Clock className="h-2.5 w-2.5 lg:h-3 lg:w-3 flex-shrink-0" />
-                <span className="whitespace-nowrap">Senin - Minggu: 08:00 - 19:00</span>
+                <span className="whitespace-nowrap">
+                  Senin - Minggu: 08:00 - 19:00
+                </span>
               </div>
             </div>
             <div className="flex items-center gap-1 min-w-0 flex-1 justify-end">
               <MapPin className="h-2.5 w-2.5 lg:h-3 lg:w-3 flex-shrink-0" />
-              <span className="truncate text-right">Jl.Panglima Sudirman 206A ( Depan Bank Syariah Indonesia ) Turen Malang</span>
+              <span className="truncate text-right">
+                Jl.Panglima Sudirman 206A ( Depan Bank Syariah Indonesia ) Turen
+                Malang
+              </span>
             </div>
           </div>
         </div>
@@ -71,7 +76,7 @@ const Layout = ({ children }: LayoutProps) => {
                     "relative text-sm font-medium transition-all duration-300 py-2 px-3 rounded-lg hover:bg-optik-red-50",
                     isActive(item.href)
                       ? "text-optik-red-600 bg-optik-red-50 shadow-sm"
-                      : "text-optik-gray-700 hover:text-optik-red-600"
+                      : "text-optik-gray-700 hover:text-optik-red-600",
                   )}
                 >
                   {item.name}
@@ -84,11 +89,7 @@ const Layout = ({ children }: LayoutProps) => {
 
             {/* CTA Button */}
             <div className="hidden lg:block">
-              <Button
-                asChild
-                variant="primary"
-                size="sm"
-              >
+              <Button asChild variant="primary" size="sm">
                 <Link to="/kontak">Hubungi Kami</Link>
               </Button>
             </div>
@@ -120,7 +121,7 @@ const Layout = ({ children }: LayoutProps) => {
                     "block py-3 px-4 text-sm font-medium transition-all duration-300 rounded-xl",
                     isActive(item.href)
                       ? "text-optik-red-600 bg-optik-red-50 shadow-sm border border-optik-red-100"
-                      : "text-optik-gray-700 hover:text-optik-red-600 hover:bg-optik-red-50 hover:shadow-sm"
+                      : "text-optik-gray-700 hover:text-optik-red-600 hover:bg-optik-red-50 hover:shadow-sm",
                   )}
                   onClick={() => setMobileMenuOpen(false)}
                 >
@@ -128,11 +129,7 @@ const Layout = ({ children }: LayoutProps) => {
                 </Link>
               ))}
               <div className="pt-4 mt-4 border-t border-optik-gray-200">
-                <Button
-                  asChild
-                  variant="primary"
-                  className="w-full"
-                >
+                <Button asChild variant="primary" className="w-full">
                   <Link to="/kontak" onClick={() => setMobileMenuOpen(false)}>
                     Hubungi Kami
                   </Link>
@@ -160,8 +157,9 @@ const Layout = ({ children }: LayoutProps) => {
                 />
               </div>
               <p className="text-optik-gray-300 mb-4">
-                Optik terpercaya yang telah melayani masyarakat selama bertahun-tahun 
-                dengan mengutamakan kualitas dan layanan yang ramah.
+                Optik terpercaya yang telah melayani masyarakat selama
+                bertahun-tahun dengan mengutamakan kualitas dan layanan yang
+                ramah.
               </p>
             </div>
 
@@ -188,7 +186,10 @@ const Layout = ({ children }: LayoutProps) => {
               <div className="space-y-3 text-optik-gray-300">
                 <div className="flex items-start space-x-2">
                   <MapPin className="h-4 w-4 mt-1 flex-shrink-0" />
-                  <span className="text-sm">Jl.Panglima Sudirman 206A ( Depan Bank Syariah Indonesia ) Turen Malang</span>
+                  <span className="text-sm">
+                    Jl.Panglima Sudirman 206A ( Depan Bank Syariah Indonesia )
+                    Turen Malang
+                  </span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Phone className="h-4 w-4" />

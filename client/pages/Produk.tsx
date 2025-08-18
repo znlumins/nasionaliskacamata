@@ -13,7 +13,7 @@ export default function Produk() {
         "Layanan pemeriksaan mata gratis",
         "Konsultasi pemilihan frame sesuai bentuk wajah",
         "Pemasangan lensa cepat dan presisi",
-        "Layanan perbaikan dan maintenance"
+        "Layanan perbaikan dan maintenance",
       ]}
     />
   );

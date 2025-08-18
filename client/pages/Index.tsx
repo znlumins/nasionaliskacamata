@@ -4,16 +4,16 @@ import Layout from "@/components/Layout";
 import { Button } from "@/components/meraki";
 import { Card, CardContent } from "@/components/meraki";
 import { Badge } from "@/components/meraki";
-import { 
-  Eye, 
-  Users, 
-  Award, 
-  Star, 
-  CheckCircle, 
+import {
+  Eye,
+  Users,
+  Award,
+  Star,
+  CheckCircle,
   ArrowRight,
   Glasses,
   Heart,
-  Shield
+  Shield,
 } from "lucide-react";
 
 export default function Index() {
@@ -22,74 +22,90 @@ export default function Index() {
   const heroSlides = [
     {
       id: 1,
-      image: "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      image:
+        "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
       title: "Koleksi Frame Terlengkap",
-      subtitle: "Ribuan pilihan frame berkualitas"
+      subtitle: "Ribuan pilihan frame berkualitas",
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80",
+      image:
+        "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80",
       title: "Kacamata Elegan & Berkualitas",
-      subtitle: "Style modern untuk penampilan sempurna"
+      subtitle: "Style modern untuk penampilan sempurna",
     },
     {
       id: 3,
-      image: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2064&q=80",
+      image:
+        "https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2064&q=80",
       title: "Model Kacamata Terkini",
-      subtitle: "Mengikuti tren fashion terdepan"
-    }
+      subtitle: "Mengikuti tren fashion terdepan",
+    },
   ];
 
   const services = [
     {
       icon: Eye,
       title: "Pemeriksaan Mata Gratis",
-      description: "Pemeriksaan mata komprehensif oleh ahli optik berpengalaman untuk menentukan ukuran lensa yang tepat.",
-      features: ["Tes refraksi lengkap", "Konsultasi gratis", "Teknologi modern"]
+      description:
+        "Pemeriksaan mata komprehensif oleh ahli optik berpengalaman untuk menentukan ukuran lensa yang tepat.",
+      features: [
+        "Tes refraksi lengkap",
+        "Konsultasi gratis",
+        "Teknologi modern",
+      ],
     },
     {
       icon: Glasses,
       title: "Koleksi Frame Terlengkap",
-      description: "Ribuan pilihan frame dari brand lokal dan internasional untuk pria, wanita, dan anak-anak.",
-      features: ["Brand terpercaya", "Model terbaru", "Harga terjangkau"]
+      description:
+        "Ribuan pilihan frame dari brand lokal dan internasional untuk pria, wanita, dan anak-anak.",
+      features: ["Brand terpercaya", "Model terbaru", "Harga terjangkau"],
     },
     {
       icon: Award,
       title: "Lensa Berkualitas Tinggi",
-      description: "Lensa dengan teknologi terdepan untuk memberikan penglihatan yang jernih dan nyaman.",
-      features: ["Anti UV", "Anti scratch", "Garansi kualitas"]
-    }
+      description:
+        "Lensa dengan teknologi terdepan untuk memberikan penglihatan yang jernih dan nyaman.",
+      features: ["Anti UV", "Anti scratch", "Garansi kualitas"],
+    },
   ];
 
   const testimonials = [
     {
       name: "Ibu Sari Dewi",
       role: "Guru",
-      content: "Pelayanan di Optik Nasionalis sangat memuaskan! Staf yang ramah dan profesional membantu saya menemukan kacamata yang sempurna. Kualitas lensa juga sangat bagus.",
+      content:
+        "Pelayanan di Optik Nasionalis sangat memuaskan! Staf yang ramah dan profesional membantu saya menemukan kacamata yang sempurna. Kualitas lensa juga sangat bagus.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+      image:
+        "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
     },
     {
       name: "Bapak Ahmad Rahman",
       role: "Pengusaha",
-      content: "Sudah 10 tahun menjadi pelanggan setia. Optik Nasionalis selalu memberikan produk terbaik dengan harga yang fair. Sangat direkomendasikan!",
+      content:
+        "Sudah 10 tahun menjadi pelanggan setia. Optik Nasionalis selalu memberikan produk terbaik dengan harga yang fair. Sangat direkomendasikan!",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+      image:
+        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
     },
     {
       name: "Maya Putri",
       role: "Mahasiswa",
-      content: "Frame kacamata di sini benar-benar trendy dan cocok untuk anak muda. Harganya juga student-friendly. Tim optik sangat membantu dalam pemilihan style yang pas!",
+      content:
+        "Frame kacamata di sini benar-benar trendy dan cocok untuk anak muda. Harganya juga student-friendly. Tim optik sangat membantu dalam pemilihan style yang pas!",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-    }
+      image:
+        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    },
   ];
 
   const stats = [
     { number: "15+", label: "Tahun Pengalaman", icon: Award },
     { number: "10.000+", label: "Pelanggan Puas", icon: Users },
     { number: "500+", label: "Model Frame", icon: Glasses },
-    { number: "98%", label: "Tingkat Kepuasan", icon: Heart }
+    { number: "98%", label: "Tingkat Kepuasan", icon: Heart },
   ];
 
   // Auto-advance slides
@@ -130,20 +146,24 @@ export default function Index() {
                 Solusi Penglihatan Terbaik untuk Anda
               </p>
               <p className="text-sm sm:text-base lg:text-lg mb-6 sm:mb-8 opacity-90 max-w-2xl mx-auto leading-relaxed">
-                Optik terpercaya yang telah melayani masyarakat selama bertahun-tahun
-                dengan mengutamakan kualitas dan layanan yang ramah
+                Optik terpercaya yang telah melayani masyarakat selama
+                bertahun-tahun dengan mengutamakan kualitas dan layanan yang
+                ramah
               </p>
-            <Button
-              asChild
-              variant="primary"
-              size="lg"
-              className="px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg"
-            >
-              <Link to="/produk" className="inline-flex items-center space-x-2">
-                <span>Lihat Koleksi Kami</span>
-                <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
-              </Link>
-            </Button>
+              <Button
+                asChild
+                variant="primary"
+                size="lg"
+                className="px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg"
+              >
+                <Link
+                  to="/produk"
+                  className="inline-flex items-center space-x-2"
+                >
+                  <span>Lihat Koleksi Kami</span>
+                  <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
+                </Link>
+              </Button>
             </div>
           </div>
         </div>
@@ -193,32 +213,45 @@ export default function Index() {
             Mengapa Memilih Optik Nasionalis?
           </h2>
           <p className="text-base sm:text-lg text-optik-gray-600 mb-6 sm:mb-8 leading-relaxed">
-            Sebagai optik terpercaya yang telah berdiri selama puluhan tahun, kami berkomitmen
-            untuk memberikan solusi penglihatan terbaik dengan mengutamakan kualitas produk,
-            layanan profesional, dan kepuasan pelanggan. Pengalaman bertahun-tahun membuat
-            kami memahami kebutuhan setiap pelanggan dengan sempurna.
+            Sebagai optik terpercaya yang telah berdiri selama puluhan tahun,
+            kami berkomitmen untuk memberikan solusi penglihatan terbaik dengan
+            mengutamakan kualitas produk, layanan profesional, dan kepuasan
+            pelanggan. Pengalaman bertahun-tahun membuat kami memahami kebutuhan
+            setiap pelanggan dengan sempurna.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 mt-8 sm:mt-12">
             <div className="text-center px-4 group">
               <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-optik-red-500 to-optik-red-600 text-white rounded-2xl mb-3 sm:mb-4 shadow-lg group-hover:shadow-xl group-hover:scale-110 transition-all duration-300">
                 <Shield className="h-6 w-6 sm:h-8 sm:w-8" />
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold text-optik-gray-900 mb-2">Kualitas Terjamin</h3>
-              <p className="text-sm sm:text-base text-optik-gray-600">Produk berkualitas tinggi dengan garansi resmi</p>
+              <h3 className="text-lg sm:text-xl font-semibold text-optik-gray-900 mb-2">
+                Kualitas Terjamin
+              </h3>
+              <p className="text-sm sm:text-base text-optik-gray-600">
+                Produk berkualitas tinggi dengan garansi resmi
+              </p>
             </div>
             <div className="text-center px-4 group">
               <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-optik-red-500 to-optik-red-600 text-white rounded-2xl mb-3 sm:mb-4 shadow-lg group-hover:shadow-xl group-hover:scale-110 transition-all duration-300">
                 <Users className="h-6 w-6 sm:h-8 sm:w-8" />
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold text-optik-gray-900 mb-2">Tim Profesional</h3>
-              <p className="text-sm sm:text-base text-optik-gray-600">Ahli optik berpengalaman dan bersertifikat</p>
+              <h3 className="text-lg sm:text-xl font-semibold text-optik-gray-900 mb-2">
+                Tim Profesional
+              </h3>
+              <p className="text-sm sm:text-base text-optik-gray-600">
+                Ahli optik berpengalaman dan bersertifikat
+              </p>
             </div>
             <div className="text-center px-4 group">
               <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-optik-red-500 to-optik-red-600 text-white rounded-2xl mb-3 sm:mb-4 shadow-lg group-hover:shadow-xl group-hover:scale-110 transition-all duration-300">
                 <Heart className="h-6 w-6 sm:h-8 sm:w-8" />
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold text-optik-gray-900 mb-2">Layanan Ramah</h3>
-              <p className="text-sm sm:text-base text-optik-gray-600">Pelayanan yang personal dan penuh perhatian</p>
+              <h3 className="text-lg sm:text-xl font-semibold text-optik-gray-900 mb-2">
+                Layanan Ramah
+              </h3>
+              <p className="text-sm sm:text-base text-optik-gray-600">
+                Pelayanan yang personal dan penuh perhatian
+              </p>
             </div>
           </div>
         </div>
@@ -236,7 +269,8 @@ export default function Index() {
             </h2>
             <p className="text-base sm:text-lg text-optik-gray-600 max-w-2xl mx-auto">
               Kami menyediakan berbagai layanan komprehensif untuk memenuhi
-              semua kebutuhan penglihatan Anda dengan standar kualitas tertinggi.
+              semua kebutuhan penglihatan Anda dengan standar kualitas
+              tertinggi.
             </p>
           </div>
 
@@ -255,7 +289,10 @@ export default function Index() {
                   </p>
                   <ul className="space-y-2">
                     {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center space-x-2 text-xs sm:text-sm text-optik-gray-600">
+                      <li
+                        key={featureIndex}
+                        className="flex items-center space-x-2 text-xs sm:text-sm text-optik-gray-600"
+                      >
                         <CheckCircle className="h-3 w-3 sm:h-4 sm:w-4 text-optik-red-600 flex-shrink-0" />
                         <span>{feature}</span>
                       </li>
@@ -290,7 +327,10 @@ export default function Index() {
                 <CardContent className="p-6 sm:p-8">
                   <div className="flex items-center mb-3 sm:mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="h-4 w-4 sm:h-5 sm:w-5 text-yellow-400 fill-current" />
+                      <Star
+                        key={i}
+                        className="h-4 w-4 sm:h-5 sm:w-5 text-yellow-400 fill-current"
+                      />
                     ))}
                   </div>
                   <p className="text-sm sm:text-base text-optik-gray-600 mb-4 sm:mb-6 leading-relaxed italic">
@@ -338,7 +378,10 @@ export default function Index() {
               size="lg"
               className="bg-white text-optik-red-600 hover:bg-optik-gray-100 font-semibold px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
             >
-              <Link to="/produk" className="inline-flex items-center justify-center space-x-2">
+              <Link
+                to="/produk"
+                className="inline-flex items-center justify-center space-x-2"
+              >
                 <span>Lihat Produk</span>
                 <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
               </Link>

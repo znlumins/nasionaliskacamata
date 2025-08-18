@@ -13,7 +13,7 @@ export default function Galeri() {
         "Koleksi frame terbaru",
         "Proses pemeriksaan mata",
         "Tim optik dalam aksi",
-        "Event dan promosi khusus"
+        "Event dan promosi khusus",
       ]}
     />
   );

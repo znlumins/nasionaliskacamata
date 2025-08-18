@@ -10,7 +10,11 @@ interface PlaceholderPageProps {
   features?: string[];
 }
 
-const PlaceholderPage = ({ title, description, features }: PlaceholderPageProps) => {
+const PlaceholderPage = ({
+  title,
+  description,
+  features,
+}: PlaceholderPageProps) => {
   return (
     <Layout>
       <div className="min-h-[60vh] flex items-center justify-center py-16">
@@ -20,11 +24,11 @@ const PlaceholderPage = ({ title, description, features }: PlaceholderPageProps)
               <div className="inline-flex items-center justify-center w-20 h-20 bg-optik-red-100 text-optik-red-600 rounded-full mb-6">
                 <Construction className="h-10 w-10" />
               </div>
-              
+
               <h1 className="text-3xl font-bold text-optik-gray-900 mb-4 font-display">
                 {title}
               </h1>
-              
+
               <p className="text-lg text-optik-gray-600 mb-8 leading-relaxed">
                 {description}
               </p>
@@ -36,7 +40,10 @@ const PlaceholderPage = ({ title, description, features }: PlaceholderPageProps)
                   </h3>
                   <ul className="text-left space-y-2 max-w-md mx-auto">
                     {features.map((feature, index) => (
-                      <li key={index} className="flex items-center space-x-2 text-optik-gray-600">
+                      <li
+                        key={index}
+                        className="flex items-center space-x-2 text-optik-gray-600"
+                      >
                         <div className="w-2 h-2 bg-optik-red-600 rounded-full flex-shrink-0" />
                         <span>{feature}</span>
                       </li>
@@ -47,10 +54,10 @@ const PlaceholderPage = ({ title, description, features }: PlaceholderPageProps)
 
               <div className="space-y-4">
                 <p className="text-sm text-optik-gray-500 mb-6">
-                  Halaman ini sedang dalam pengembangan. Silakan kembali ke beranda 
-                  atau hubungi kami untuk informasi lebih lanjut.
+                  Halaman ini sedang dalam pengembangan. Silakan kembali ke
+                  beranda atau hubungi kami untuk informasi lebih lanjut.
                 </p>
-                
+
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button asChild variant="primary">
                     <Link to="/" className="inline-flex items-center space-x-2">

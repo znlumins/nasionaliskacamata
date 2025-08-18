@@ -13,7 +13,7 @@ export default function Kontak() {
         "Peta Google Maps interaktif",
         "Petunjuk arah dan transportasi",
         "Formulir kontak online",
-        "Info parkir dan aksesibilitas"
+        "Info parkir dan aksesibilitas",
       ]}
     />
   );

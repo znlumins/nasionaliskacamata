@@ -148,20 +148,12 @@ const Layout = ({ children }: LayoutProps) => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* Company Info */}
             <div className="col-span-1 md:col-span-2">
-              <div className="flex items-center space-x-3 mb-4">
-                <div className="bg-optik-red-600 text-white p-2 rounded-lg">
-                  <svg
-                    className="h-6 w-6"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold font-display">Optik Nasionalis Kacamata</h3>
-                  <p className="text-optik-gray-300">Solusi Penglihatan Terbaik untuk Anda</p>
-                </div>
+              <div className="mb-4">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F607a5b5f68f247e6a6ca32955e309b70%2Fcaada15ea42041b7bc8a05d02553a073?format=webp&width=800"
+                  alt="Nasionalis Optik - Solusi Penglihatan Anda"
+                  className="h-12 w-auto mb-2"
+                />
               </div>
               <p className="text-optik-gray-300 mb-4">
                 Optik terpercaya yang telah melayani masyarakat selama bertahun-tahun 

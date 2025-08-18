@@ -55,7 +55,7 @@ const Layout = ({ children }: LayoutProps) => {
             {/* Logo */}
             <Link to="/" className="flex items-center">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F607a5b5f68f247e6a6ca32955e309b70%2F6d4bdb7f34da4b4e9bbcf8850ec1b35f?format=webp&width=800"
+                src="https://cdn.builder.io/api/v1/image/assets%2F607a5b5f68f247e6a6ca32955e309b70%2Fcaada15ea42041b7bc8a05d02553a073?format=webp&width=800"
                 alt="Nasionalis Optik - Solusi Penglihatan Anda"
                 className="h-12 w-auto"
               />

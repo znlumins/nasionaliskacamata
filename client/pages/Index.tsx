@@ -138,13 +138,13 @@ export default function Index() {
 
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white max-w-4xl mx-auto px-4">
-            <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold mb-4 sm:mb-6 font-display leading-tight">
+            <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold mb-6 font-display leading-tight">
               Optik Nasionalis Kacamata
             </h1>
-            <p className="text-lg sm:text-xl lg:text-2xl mb-6 sm:mb-8 font-medium">
+            <p className="text-xl sm:text-2xl lg:text-3xl mb-4 font-semibold text-optik-red-100">
               Solusi Penglihatan Terbaik untuk Anda
             </p>
-            <p className="text-sm sm:text-base lg:text-lg mb-6 sm:mb-8 opacity-90 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg mb-8 opacity-90 max-w-3xl mx-auto leading-relaxed font-light">
               Optik terpercaya yang telah melayani masyarakat selama
               bertahun-tahun dengan mengutamakan kualitas dan layanan yang
               ramah

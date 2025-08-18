@@ -1,7 +1,7 @@
 import { ReactNode, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/meraki";
 import { Menu, X, Phone, MapPin, Clock } from "lucide-react";
 
 interface LayoutProps {
@@ -83,8 +83,8 @@ const Layout = ({ children }: LayoutProps) => {
             <div className="hidden lg:block">
               <Button
                 asChild
+                variant="primary"
                 size="sm"
-                className="bg-optik-red-600 hover:bg-optik-red-700 text-white font-medium"
               >
                 <Link to="/kontak">Hubungi Kami</Link>
               </Button>
@@ -127,7 +127,8 @@ const Layout = ({ children }: LayoutProps) => {
               <div className="pt-2 border-t border-optik-gray-200">
                 <Button
                   asChild
-                  className="w-full bg-optik-red-600 hover:bg-optik-red-700 text-white font-medium"
+                  variant="primary"
+                  className="w-full"
                 >
                   <Link to="/kontak" onClick={() => setMobileMenuOpen(false)}>
                     Hubungi Kami

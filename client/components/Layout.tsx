@@ -151,9 +151,9 @@ const Layout = ({ children }: LayoutProps) => {
             <div className="col-span-1 md:col-span-2">
               <div className="mb-4">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F607a5b5f68f247e6a6ca32955e309b70%2Fcaada15ea42041b7bc8a05d02553a073?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F607a5b5f68f247e6a6ca32955e309b70%2Fc6cbd9efab5b40a5836e6f3d087e2910?format=webp&width=800"
                   alt="Nasionalis Optik - Solusi Penglihatan Anda"
-                  className="h-12 w-auto mb-2"
+                  className="h-16 sm:h-20 w-auto mb-2"
                 />
               </div>
               <p className="text-optik-gray-300 mb-4">

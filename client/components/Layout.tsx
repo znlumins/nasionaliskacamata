@@ -53,22 +53,12 @@ const Layout = ({ children }: LayoutProps) => {
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
-            <Link to="/" className="flex items-center space-x-3">
-              <div className="bg-optik-red-600 text-white p-2 rounded-lg">
-                <svg
-                  className="h-8 w-8"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
-                </svg>
-              </div>
-              <div>
-                <h1 className="text-xl font-bold text-optik-red-700 font-display">
-                  Optik Nasionalis
-                </h1>
-                <p className="text-sm text-optik-gray-600">Kacamata Berkualitas</p>
-              </div>
+            <Link to="/" className="flex items-center">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F607a5b5f68f247e6a6ca32955e309b70%2F6d4bdb7f34da4b4e9bbcf8850ec1b35f?format=webp&width=800"
+                alt="Nasionalis Optik - Solusi Penglihatan Anda"
+                className="h-12 w-auto"
+              />
             </Link>
 
             {/* Desktop Navigation */}

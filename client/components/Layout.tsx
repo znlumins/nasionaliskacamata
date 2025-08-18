@@ -200,7 +200,7 @@ const Layout = ({ children }: LayoutProps) => {
 
           <div className="border-t border-optik-gray-700 mt-8 pt-8 text-center">
             <p className="text-optik-gray-400">
-              &copy; 2024 Optik Nasionalis Kacamata. Semua hak dilindungi.
+              &copy; 2025 Optik Nasionalis Kacamata. Semua hak dilindungi.
             </p>
           </div>
         </div>

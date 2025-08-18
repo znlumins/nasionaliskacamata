@@ -146,8 +146,7 @@ export default function Index() {
             </p>
             <p className="text-base sm:text-lg mb-8 opacity-90 max-w-3xl mx-auto leading-relaxed font-light">
               Optik terpercaya yang telah melayani masyarakat selama
-              bertahun-tahun dengan mengutamakan kualitas dan layanan yang
-              ramah
+              bertahun-tahun dengan mengutamakan kualitas dan layanan yang ramah
             </p>
             <Button
               asChild
@@ -155,10 +154,7 @@ export default function Index() {
               size="lg"
               className="px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg"
             >
-              <Link
-                to="/produk"
-                className="inline-flex items-center space-x-2"
-              >
+              <Link to="/produk" className="inline-flex items-center space-x-2">
                 <span>Lihat Koleksi Kami</span>
                 <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
               </Link>
